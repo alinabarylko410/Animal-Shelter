@@ -1,0 +1,599 @@
+@font-face {
+    font-family: 'Georgia Regular font';
+    src: url('../fonts/Georgia Regular font.eot');
+    src: url('../fonts/Georgia Regular font.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Georgia Regular font.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Georgia';
+    src: url('../fonts/Georgia.svg#Georgia') format('svg'),
+         url('../fonts/Georgia.ttf') format('truetype'),
+         url('../fonts/Georgia.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+      font-family: "ArialRegular";
+      src: url("../fonts/ArialRegular.eot");
+      src: url("../fonts/ArialRegular.eot?#iefix")format("embedded-opentype"),
+          url("../fonts/ArialRegular.woff") format("woff"),
+          url("../fonts/ArialRegular.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+  }
+  
+  @font-face {
+      font-family: 'Times New Roman';
+      src: url('../fonts/times_new_roman.eot'); /* IE 9 Compatibility Mode */
+      src: url('../fonts/times_new_roman.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+          url('../fonts/times_new_roman.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../fonts/times_new_roman.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+          url('../fonts/times_new_roman.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('../fonts/times_new_roman.svg#times_new_roman') format('svg'); /* Chrome < 4, Legacy iOS */
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  a {
+      color: inherit;
+      text-decoration: none;
+  }
+  
+  html {
+      font-size: 10px;
+  }
+  
+  body {
+      font-family: 'ArialRegular', sans-serif;
+      background-color: yellow;
+  }
+  
+  .home {
+      background: url('../img/banner.jpg') no-repeat;
+      background-size: cover;
+      background-position: center center;
+  }
+  
+  .wrapper {
+      max-width: 1170px;
+      margin: 0 auto;
+  }
+  
+  header {
+      padding-top: 62px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .logo {
+      margin-top: -2px;
+  }
+  
+  h1, h2, h3, h4 {
+      font-family: 'Georgia Regular font', serif;	
+      font-weight: 400;
+  }
+  
+  h1 {
+      font-size: 3.2rem;
+      letter-spacing: 2px;
+      color: #f1cdb3;
+  }
+  
+  header p {
+      color: #fff;
+      font-size: 1.3rem;
+      padding-top: 6px;
+      letter-spacing: 1.5px;
+  }
+  
+  nav a {
+      color: #cdcdcd;
+      font-size: 1.5rem;
+      margin-left: 34px;
+      padding-bottom: 8px;
+      position: relative;
+  }
+  
+  nav a.active, nav a:hover {
+      color: #fff;
+  }
+  
+  nav a::after {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: width 0.2s linear;
+      background-color: #f1cdb3;
+  }
+  
+  nav a:hover::after, nav a.active::after {
+      width: 100%;
+  }
+  
+  .home_house {
+      margin-top: 240px;
+      padding-bottom: 268px;
+      max-width: 450px;
+  }
+  
+  h2 {	
+      color: #fff;
+      font-size: 4.4rem;
+      line-height: 5.7rem;
+      letter-spacing: 2.7px;
+  }
+  
+  .home_house p {
+      color: #cdcdcd;
+      font-size: 1.5rem;
+      margin-top: 28px;
+      margin-bottom: 40px;
+      line-height: 2.4rem;
+      letter-spacing: -0.2px;
+  }
+  
+  .btn {
+      display: block;
+      width: 204px;
+      height: 52px;
+      border: 2px solid #f1cdb3;
+      border-radius: 30px;
+      text-align: center;
+      color: #292929;
+      font-size: 1.7rem;
+      font-family: 'Georgia Regular font', serif;
+      line-height: 45px;
+      letter-spacing: 1.1px;
+  }
+  
+  .btn_color, .btn_carousel:hover {
+      background-color: #f1cdb3;
+  }
+  
+  .about {
+      background-color: #fafafa;
+      padding-top: 85px;
+      padding-bottom: 90px;
+      color: #4c4c4c;
+  }
+  
+  .about_shelter {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .about_shelter img {
+      padding-right: 117px;
+      margin-top: 3px;
+  }
+  
+  .about_shelter_article {
+      max-width: 415px;
+      margin-top: -3px;
+  }
+  
+  h3 {
+      font-size: 3.5rem;
+      color: #545454;
+      margin-bottom: 2px;
+      line-height: 4.5rem;
+      letter-spacing: 2px;
+  }
+  
+  .about_shelter_article p {
+      margin-top: 30px;
+      margin-bottom: -7px;
+      margin-left: 1px;
+      font-size: 1.5rem;
+      line-height: 2.4rem;
+      letter-spacing: -0.09px;
+  }
+  
+  .pets {
+      padding-top: 70px;
+      background-color: #f6f6f6;
+      padding-bottom: 60px;
+  }
+  
+  .pets h3 {
+      margin: 0 auto;
+      max-width: 400px;
+      margin-bottom: 55px;
+      text-align: center;
+      color: #4c4c4c;
+  }
+  
+  .pets_list {
+      position: relative;
+  }
+  
+  
+  .arrow {
+      width: 50px;
+      height: 50px;
+      border: 2px solid #f1cdb3;
+      border-radius: 50%;
+      line-height: 46px;
+      text-align: center;
+      font-size: 1.6rem;
+      position: absolute;
+      top: 48.5%;
+  }
+  
+  .arrow_left {
+      left: 2px;
+  }
+  
+  .arrow_right {
+      right: 0;
+  }
+  
+  .arrow:hover {
+      background-color: #f1cdb3;
+  }
+  
+  .owl-carousel {
+      max-width: 910px;
+      margin: 0 auto;
+      /*padding-left: 50px;*/
+      /*background-color: #f6f6f6;*/
+  }
+  
+  .owl-carousel_item {
+      width: 271px;
+      height: 425px;
+      border-radius: 10px;
+      margin-top: 10px;
+      margin-bottom: 70px;
+      background-color: #fafafa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 35px;
+  }
+  
+  .owl-carousel_item img {
+      border-radius: 10px;
+  }
+  
+  h4 {
+      margin-top: 24px;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #545454;
+      letter-spacing: 1.3px;
+  }
+  
+  .btn_carousel {
+      width: 190px;
+  }
+  
+  .btn_rest {
+      width: 267px;
+      margin: -27px auto 5px;
+  }
+  
+  .help {
+      background-color: #fafafa;
+      padding-top: 73px;
+      padding-bottom: 10px;
+  }
+  
+  .help h3 {
+      max-width: 320px;
+      margin: -7px auto 0;
+      text-align: center;
+  }
+  
+  .help_need {
+      margin-top: 71px;
+      padding-left: 8px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+  }
+  
+  .help_need_item {
+      margin-bottom: 51px;
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .help_need_item_transport {
+      margin-top: -5px;
+  }
+  
+  .help_need_item_cups {
+      margin-top: 2px;
+      margin-left: 4px;
+  }  
+  
+  .help_need_item_shampoos {
+      margin-right: -2px;
+  }
+  
+  .help_need_item_vitamins {
+      margin-left: 120px;
+      margin-top: 10px;
+  }
+  
+  .help_need_item_medicines {
+      margin-top: 8px;
+      margin-left: -8px;
+  }
+  
+  .help_need_item_collars {
+      margin-top: 10px;
+      margin-right: 68px;
+  }
+  
+  .help_need_item_sleep {
+      margin-right: 110px;
+      margin-top: 10px;
+  }
+  
+  .h4_food {
+      margin-left: 3px;
+  }
+  
+  .h4_transport, .h4_cups, .h4_shampoos {
+      margin-left: 8px;
+  }
+  
+  .h4_vitamins {
+      margin-left: 120px;
+  }
+  
+  .h4_medicines {
+      margin-left: -10px;
+  }
+  
+  .h4_collars {
+      margin-right: 65px;
+  }
+  
+  .h4_sleep {
+      margin-right: 95px;
+      margin-left: -10px;
+  }
+  
+  /*.help_need_item:first-child {
+      padding-left: 10px;
+  }*/
+  
+  /*.help_need_item + .help_need_item {
+      margin-left: 100px;
+  }*/
+  
+  .help_need_item:hover {
+      transform: scale(1.2);
+  }
+  
+  .help_need_item_icon {
+      background: url('../img/spritesheet.png') no-repeat;
+  }
+  
+  .help_need_item_food {
+      width: 45px;
+      height: 57px;
+      background-position: -5px -51px;
+  }
+  
+  .help_need_item_transport {
+      width: 65px;
+      height: 65px;
+      background-position: -60px -51px;
+  }
+  
+  .help_need_item_toys {
+      width: 58px;
+      height: 58px;
+      background-position: -135px -51px;
+  }
+  
+  .help_need_item_cups {
+      width: 58px;
+      height: 55px;
+      background-position: -135px -119px;
+  }
+  
+  .help_need_item_shampoos {
+      width: 30px;
+      height: 58px;
+      background-position: -5px -119px;
+  }
+  
+  .help_need_item_vitamins {
+      width: 64px;
+      height: 57px;
+      background-position: -203px -5px;
+  }
+  
+  .help_need_item_medicines {
+      width: 58px;
+      height: 58px;
+      background-position: -203px -72px;
+  }
+  
+  .help_need_item_collars {
+      width: 65px;
+      height: 57px;
+      background-position: -45px -140px;
+  }
+  
+  .help_need_item_sleep {
+      width: 54px;
+      height: 57px;
+      background-position: -203px -140px;
+  }
+  
+  .donation {
+      background-color: #f6f6f6;
+      padding-top: 68px;
+      padding-bottom: 82px; 
+  }
+  
+  .donation h3 {
+      margin-top: -6px;
+  }
+  
+  .donation_details {
+      display: flex;
+      
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .donation_details img {
+      margin-right: 66px;
+      margin-left: -206px;
+      margin-top: 13px;
+  }
+  
+  .donation_details_form {
+      max-width: 360px;
+  }
+  
+  input[type='text'] {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 14px;
+      background-color: transparent;
+      border: none;
+      font-family: 'Georgia Regular font', serif;
+      font-size: 1.5rem;
+      color: #545454;
+      letter-spacing: 1px;
+  }
+  
+  form p {
+      margin-top: 29px;
+      font-size: 1.2rem;
+      color: #b2b2b2;
+      line-height: 1.8rem;
+      letter-spacing: 0.1px;
+  }
+  
+  .btn_card {
+      width: 320px;
+      height: 47px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f1cdb3;
+      padding: 0 12px;
+  }
+  
+  .btn_card_img {
+      background: url('../img/spritesheet.png') no-repeat center;
+      width: 30px;
+      height: 24px;
+      background-position: -5px -5px;
+      margin-top: -2px;
+  }
+  
+  .btn_card_number {
+      font-family: 'Times New Roman', serif;
+      font-size: 2rem;
+      letter-spacing: 1.2px;
+  }
+  
+  .contacts {
+      padding-top: 80px;
+      padding-bottom: 75px;
+      
+      background: url('../img/footer-bgr.jpg') no-repeat;
+  }
+  
+  footer h3 {
+      color: #fff;
+  }
+  
+  footer p {
+      font-family: 'Times New Roman', serif;
+      font-size: 2rem;
+      color: #f1cdb3;
+      /*line-height: 4.5rem;*/
+  }
+  
+  .contacts_details {
+      display: flex;
+      justify-content: flex-start;
+      align-items: stretch;
+      position: relative;
+  }
+  
+  .contacts_details img {
+      position: absolute;
+      bottom: -75px;
+      right: 0;
+  }
+  
+  /*.contacts_details_forquestions {
+      margin-right: 150px;
+      width: 370px;
+  }*/
+  
+  /*.contacts_details_forvisits {
+      margin-right: 400px;
+  
+  }*/
+  
+  .contacts_details_forquestions, .contacts_details_forvisits {
+      width: 370px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; 
+  }
+  
+  .contacts_details_forquestions_email, .contacts_details_forquestions_phone,
+  .contacts_details_forvisits_boston, .contacts_details_forvisits_london {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin-top: 22px;
+  }
+  
+  .contacts_details_forquestions_email_icon {
+      background: url('../img/spritesheet.png') no-repeat center;
+      width: 40px;
+      height: 26px;
+      background-position: -45px -5px;
+      margin-right: 22px;
+  }
+  
+  .contacts_details_forquestions_phone_icon {
+      background: url('../img/spritesheet.png') no-repeat center;
+      width: 40px;
+      height: 32px;
+      background-position: -95px -5px;
+      margin-right: 22px;
+  }
+  
+  .contacts_details_forvisits_boston_icon, .contacts_details_forvisits_london_icon {
+      background: url('../img/spritesheet.png') no-repeat center;
+      width: 26px;
+      height: 36px;
+      background-position: -145px -5px;
+      margin-right: 21px;
+  }
