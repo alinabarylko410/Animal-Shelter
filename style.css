@@ -57,7 +57,7 @@
   }
   
   .home {
-      background: url('../img/banner.jpg') no-repeat;
+      background: url('img/banner.jpg') no-repeat;
       background-size: cover;
       background-position: center center;
   }
@@ -389,7 +389,7 @@
   }
   
   .help_need_item_icon {
-      background: url('../img/spritesheet.png') no-repeat;
+      background: url('img/spritesheet.png') no-repeat;
   }
   
   .help_need_item_food {
@@ -505,7 +505,7 @@
   }
   
   .btn_card_img {
-      background: url('../img/spritesheet.png') no-repeat center;
+      background: url('img/spritesheet.png') no-repeat center;
       width: 30px;
       height: 24px;
       background-position: -5px -5px;
@@ -522,7 +522,7 @@
       padding-top: 80px;
       padding-bottom: 75px;
       
-      background: url('../img/footer-bgr.jpg') no-repeat;
+      background: url('img/footer-bgr.jpg') no-repeat;
   }
   
   footer h3 {
@@ -575,7 +575,7 @@
   }
   
   .contacts_details_forquestions_email_icon {
-      background: url('../img/spritesheet.png') no-repeat center;
+      background: url('img/spritesheet.png') no-repeat center;
       width: 40px;
       height: 26px;
       background-position: -45px -5px;
@@ -583,7 +583,7 @@
   }
   
   .contacts_details_forquestions_phone_icon {
-      background: url('../img/spritesheet.png') no-repeat center;
+      background: url('img/spritesheet.png') no-repeat center;
       width: 40px;
       height: 32px;
       background-position: -95px -5px;
@@ -591,7 +591,7 @@
   }
   
   .contacts_details_forvisits_boston_icon, .contacts_details_forvisits_london_icon {
-      background: url('../img/spritesheet.png') no-repeat center;
+      background: url('img/spritesheet.png') no-repeat center;
       width: 26px;
       height: 36px;
       background-position: -145px -5px;

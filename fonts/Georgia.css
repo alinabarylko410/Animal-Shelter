@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Georgia Regular font';
+  src: url('Georgia Regular font.eot');
+  src: url('Georgia Regular font.eot?#iefix') format('embedded-opentype'),
+       url('Georgia Regular font.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('Georgia.svg#Georgia') format('svg'),
+       url('Georgia.ttf') format('truetype'),
+       url('Georgia.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
